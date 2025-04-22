@@ -1,0 +1,67 @@
+
+
+    a. Pokreće li vaš preglednik HTTP verziju 1.0 ili 1.1? 
+Prilikom inspecta na chromu u network sekcije gdje sam ukljucio protocols mi je pokazano da je korištena HTTP 1.1
+
+
+    b. Koja je verzija HTTP-a poslužitelja pokrenuta kad pristupite npr sa sum.ba?
+Ista HTTP 1.1
+
+
+    c. Koje jezike (ako postoje) vaš preglednik pokazuje da može prihvatiti na poslužitelju?
+       Engleski (SAD) ,Engleski ,Hrvatski ,Slovenski
+       
+
+    d. Koja je IP adresa vašeg računala? A koja je IP adresa sum.ba?
+Ip adresa od SUM.ba  nadeno pod Remote Address: 212.39.111.33:443
+
+
+    e. Kada je HTML datoteka koju dohvaćate zadnji put modificirana na poslužitelju?
+           Piše Last Modified Thu,03,Dec 1992 08:37:20 GMT
+
+
+    f. Koliko se bajtova sadržaja vraća u vaš preglednik?
+1406 
+
+       
+
+
+
+    g. Koji softver/web poslužitelj poslužje web stranicu na server,navedite odakle vidite?
+Server Apache,iz headera 
+
+    h. Koje jezike vaš web preglednik može prihvatiti?
+	Isti odgovor kao pod c
+
+
+2.2. Pristup različitim resursima
+
+Pristupite sljedećim resursima te za svaki resurs napišite HTTP odgovor koji dobijete (bez tijela), te za svaki resurs odgovorite:
+
+    a. kojem MIME formatu resursa se radi:
+    b. kolika je veličina resursa (u byte-ima)
+    c. koja je verzija HTTP poslužitelja
+
+
+Resursi su:
+    1. http://web-admin.sum.ba/api/storage/pravilnik_mobilnost_1552858671_80.pdf
+       
+    2. https://eucenje.sum.ba/moodle/pluginfile.php/1/core_admin/logocompact/300x300/1698654623/Logo%20sumarum.png
+    3. https://mirrors.edge.kernel.org/linuxmint/stable/10/sha256sum.txt
+
+
+Za 1. link
+a) application/pdf
+b)799679 bytes  instalirao sam da bi saznao
+c)Apache/2.4.29 
+
+za 2. link
+a)image/png
+b)15684 
+c)nginx/1.14.0 (Ubuntu) 
+
+
+za 3. link HTTP/1.1 404 Not Found 
+a)text/html 
+b)1946 
+c)nginx 
