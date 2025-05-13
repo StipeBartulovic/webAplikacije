@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Zadaci</title>
+</head>
+<body>
+    <h2>Zadatak 1</h2>
+    <script>
+        // a) Deklaracija i inicijalizacija varijabli
+        var Broj = 19;
+        var Niz1 = 'Niz znakova';
+        var Niz2 = '3.14';
+        var Niz3 = 'U dva<br/>retka';
+        var Logicka = true;
+
+        // g) Ispis vrijednosti
+        document.write("Broj: " + Broj + "<br>");
+        document.write("Niz1: " + Niz1 + "<br>");
+        document.write("Niz2: " + Niz2 + "<br>");
+        document.write("Niz3: " + Niz3 + "<br>");
+        document.write("Logicka: " + Logicka + "<br>");
+
+        // h) Promjena logičke vrijednosti i ponovni ispis
+        Logicka = false;
+        document.write("Logicka (nakon promjene): " + Logicka + "<br>");
+    </script>
+
+    <h2>Zadatak 2</h2>
+    <script>
+        for (let i = 1; i <= 100; i++) {
+            console.log(i);
+            document.write(i + " ");
+        }
+    </script>
+
+    <h2>Zadatak 3</h2>
+    <script>
+        let broj = 2;
+        while (broj <= 100) {
+            console.log(broj);
+            document.write(broj + " ");
+            broj += 2;
+        }
+    </script>
+
+    <h2>Zadatak 4</h2>
+    <script>
+        for (let i = 2; i <= 200; i += 2) {
+            console.log(i + "^2 = " + (i * i));
+            document.write(i + "^2 = " + (i * i) + "<br>");
+        }
+    </script>
+
+    <h2>Zadatak 5</h2>
+    <script>
+        let n = 100;
+        let sum = 0;
+        for (let i = 1; i <= n; i++) {
+            sum += i;
+        }
+        let aritmeticka_sredina = sum / n;
+        console.log("Aritmetička sredina: " + aritmeticka_sredina);
+        document.write("Aritmetička sredina: " + aritmeticka_sredina + "<br>");
+    </script>
+
+    <h2>Zadatak 6</h2>
+    <script>
+        let polje = new Array(1,2,3,4,7,8,5,6,9,55,74,11,33);
+        document.write("Inicijalna dužina polja: " + polje.length + "<br>");
+
+        polje.sort((a, b) => b - a);
+        document.write("Polje od najvećeg ka najmanjem: " + polje + "<br>");
+
+        polje.sort((a, b) => a - b);
+        document.write("Polje od najmanjeg ka najvećem: " + polje + "<br>");
+
+        polje.pop();
+        polje.push(19, 22);
+
+        let polje2 = ["Banana", "Orange", "Apple", "Mango"];
+        let polje_final = polje.concat(polje2);
+        document.write("Spojeno polje: " + polje_final + "<br>");
+    </script>
+</body>
+</html>
